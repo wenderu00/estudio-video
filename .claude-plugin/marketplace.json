@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "estudio-video",
+  "description": "Marketplace pessoal do plugin estudio-video",
+  "owner": {
+    "name": "Marcio Wendell",
+    "email": "marcio.wendell.contact@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "estudio-video",
+      "description": "Estúdio de vídeo para YouTube com dois modos: transforma uma sequência de imagens em vídeo 16:9 e Shorts 9:16 (roteiro, narração neural pt-BR, trilha original composta por código, motion design com Remotion), ou edita uma gravação bruta com fala em vídeo cortado (transcrição local, cortes pela transcrição, legendas queimadas, overlays e b-roll, mixagem −14 LUFS).",
+      "source": "./",
+      "author": {
+        "name": "Marcio Wendell",
+        "email": "marcio.wendell.contact@gmail.com"
+      }
+    }
+  ]
+}

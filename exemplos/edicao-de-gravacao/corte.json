@@ -1,0 +1,137 @@
+{
+ "sections": [
+  {
+   "at": "w:31-0.2",
+   "n": "01",
+   "title": "O que é",
+   "transition": "dissolve"
+  },
+  {
+   "at": "w:96-0.2",
+   "n": "02",
+   "title": "O problema",
+   "transition": "wipeDiagonal"
+  },
+  {
+   "at": "w:151-0.2",
+   "n": "03",
+   "title": "A solução",
+   "transition": "zoomPunch"
+  },
+  {
+   "at": "w:242-0.2",
+   "n": "04",
+   "title": "O custo",
+   "transition": "whipLeft"
+  }
+ ],
+ "segments": [
+  {
+   "id": "abertura",
+   "in": "w:19-0.15",
+   "out": "w:30.end+0.25",
+   "note": "gancho: entra direto no assunto",
+   "transitionIn": {
+    "type": "fadeFromBlack",
+    "dur": 0.6
+   },
+   "overlays": [
+    {
+     "kind": "vinheta",
+     "at": "w:19-0.1",
+     "dur": 1.6,
+     "title": "Teste de Mutação"
+    },
+    {
+     "kind": "tarja",
+     "at": "w:24",
+     "dur": 3.4,
+     "name": "Marcio Wendell",
+     "role": "Desenvolvedor de Software"
+    }
+   ]
+  },
+  {
+   "id": "oquee",
+   "in": "w:31-0.15",
+   "out": "w:80.end+0.25",
+   "overlays": [
+    {
+     "kind": "cartao",
+     "at": "w:36",
+     "dur": 3.0,
+     "title": "Testa a bateria de testes",
+     "sub": "não o código"
+    }
+   ]
+  },
+  {
+   "id": "problema",
+   "in": "w:96-0.15",
+   "out": "w:150.end+0.25",
+   "camera": {
+    "type": "hold",
+    "to": 1.18
+   },
+   "overlays": [
+    {
+     "kind": "callout",
+     "at": "w:129",
+     "dur": 3.2,
+     "icon": "RefreshCw",
+     "title": "Regressão infinita",
+     "sub": "teste que testa o teste que testa o teste"
+    }
+   ]
+  },
+  {
+   "id": "solucao",
+   "in": "w:151-0.15",
+   "out": "w:241.end+0.25",
+   "look": {
+    "preset": "cinema"
+   },
+   "overlays": [
+    {
+     "kind": "card",
+     "at": "w:187",
+     "dur": 4.5,
+     "title": "O veredito",
+     "items": [
+      "Teste não pega a falha → teste ruim",
+      "Teste falha → teste bom"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "custo",
+   "in": "w:242-0.15",
+   "out": "w:330.end+0.4",
+   "camera": {
+    "type": "snap",
+    "at": "w:304",
+    "from": 1.0,
+    "to": 1.14
+   },
+   "transitionOut": {
+    "type": "fadeToBlack",
+    "dur": 1.0
+   },
+   "overlays": [
+    {
+     "kind": "destaque",
+     "at": "w:304",
+     "dur": 3.0,
+     "box": [
+      0.1,
+      0.62,
+      0.42,
+      0.2
+     ],
+     "title": "milhares de falhas"
+    }
+   ]
+  }
+ ]
+}

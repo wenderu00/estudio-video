@@ -1,0 +1,64 @@
+{
+  "title": "Teste de Mutação",
+  "slug": "teste-de-mutacao",
+  "modo": "video",
+  "sources": {
+    "principal": "bruto.mp4"
+  },
+  "voice": {
+    "fx": "gravacao"
+  },
+  "captions": {
+    "font": "DejaVu Sans",
+    "font_file": "",
+    "size": 52,
+    "color": "#FFFFFF",
+    "highlight": "#E3263A",
+    "outline": 3.5,
+    "shadow": 0.8,
+    "box": false,
+    "bg_opacity": 0.55,
+    "position": "bottom",
+    "margin": 120,
+    "safe_bottom": 0,
+    "bold": true,
+    "uppercase": false,
+    "karaoke": true,
+    "pop": true,
+    "fade": 120,
+    "capitalizar": true,
+    "max_chars": 38,
+    "max_lines": 2,
+    "max_words": 0
+  },
+  "music": {
+    "theme": "padrao",
+    "key": "D",
+    "ambience": "wind",
+    "drone": false,
+    "seed": 2026
+  },
+  "render": {
+    "crf": 16,
+    "concurrency": 6,
+    "preset": "slow",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080
+  },
+  "look": {
+    "preset": "natural",
+    "lut": null
+  },
+  "brand": {
+    "logo": "",
+    "name": "Marcio Wendell",
+    "handle": "@marciowendell",
+    "color": "#E3263A",
+    "marca": true,
+    "marca_opacidade": 0.55,
+    "marca_altura": 0.06,
+    "progresso": true,
+    "tela_final": 6.0
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "scenes": [
+    {
+      "id": "abertura",
+      "kind": "opening",
+      "image": 1,
+      "accent": "red",
+      "preRoll": 0.35,
+      "postRoll": 0.35,
+      "transitionIn": {
+        "type": "none",
+        "dur": 0
+      },
+      "music": "opening",
+      "lines": [
+        {
+          "id": "ab1",
+          "speaker": "narrador",
+          "text": "Às vezes, o maior dos vilões não é aquele que quer destruir o mundo...",
+          "screen": "hook1",
+          "screenText": "O maior dos vilões não é aquele que quer destruir o mundo...",
+          "pause": 0.3
+        },
+        {
+          "id": "ab2",
+          "speaker": "narrador",
+          "text": "mas aquele que ama demais.",
+          "screen": "hook2",
+          "screenText": "...mas aquele que AMA DEMAIS.",
+          "pause": 0.0,
+          "sfx": [
+            {
+              "name": "shimmer",
+              "at": "start",
+              "offset": -0.2
+            }
+          ],
+          "hl": [
+            "AMA",
+            "DEMAIS."
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "art": "op_villain",
+          "box": [
+            0,
+            0,
+            1080,
+            1190
+          ],
+          "camera": [
+            {
+              "at": "start",
+              "s": 1.05,
+              "x": 0.35,
+              "y": 0
+            },
+            {
+              "at": "end",
+              "s": 1.2,
+              "x": 0.6,
+              "y": -0.3
+            }
+          ],
+          "depth": 12,
+          "enter": {
+            "at": "start",
+            "type": "brighten",
+            "dur": 24
+          }
+        },
+        {
+          "art": "op_woman",
+          "box": [
+            330,
+            60,
+            750,
+            1060
+          ],
+          "camera": [
+            {
+              "at": "@hook2-14f",
+              "s": 1.1,
+              "x": 0.3,
+              "y": 0.3
+            },
+            {
+              "at": "end",
+              "s": 1.02,
+              "x": 0.4,
+              "y": 0
+            }
+          ],
+          "depth": 0,
+          "glow": {
+            "base": 0.25,
+            "amp": 0.1,
+            "period": 60
+          },
+          "saturate": 0.7,
+          "enter": {
+            "at": "@hook2-14f",
+            "dur": 30
+          }
+        }
+      ],
+      "card": {
+        "label": "UM VILÃO MEMORÁVEL",
+        "title": "O QUE FARIA TUDO",
+        "brush": "POR ELA"
+      }
+    },
+    {
+      "id": "cap1",
+      "kind": "chapter",
+      "image": 2,
+      "art": "c1_art",
+      "accent": "red",
+      "number": "01",
+      "titleLines": [
+        [
+          {
+            "t": "ELE A "
+          },
+          {
+            "t": "PERDEU",
+            "hl": true
+          }
+        ]
+      ],
+      "preRoll": 0.35,
+      "postRoll": 0.3,
+      "transitionIn": {
+        "type": "splatter",
+        "dur": 0.45
+      },
+      "music": "loss",
+      "lines": [
+        {
+          "id": "c1_t",
+          "speaker": "narrador",
+          "text": "Ele a perdeu.",
+          "screen": "title",
+          "pause": 0.35,
+          "sfx": [
+            {
+              "name": "boom",
+              "at": "start",
+              "offset": -0.35
+            }
+          ]
+        },
+        {
+          "id": "c1_b2",
+          "speaker": "narrador",
+          "text": "Para todos, acabou.",
+          "screen": "caption",
+          "pause": 0.3
+        },
+        {
+          "id": "c1_b3",
+          "speaker": "narrador",
+          "text": "Para ele... não.",
+          "screen": "caption",
+          "pause": 0.0,
+          "sfx": [
+            {
+              "name": "hit",
+              "at": "word:não",
+              "offset": 0.0
+            }
+          ]
+        }
+      ],
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.05,
+          "x": 0.2,
+          "y": 0.1
+        },
+        {
+          "at": "end",
+          "s": 1.22,
+          "x": 0.5,
+          "y": -0.5
+        }
+      ],
+      "particles": [
+        {
+          "kind": "embers",
+          "count": 24
+        },
+        {
+          "kind": "ash",
+          "count": 18
+        }
+      ]
+    },
+    {
+      "id": "cap2",
+      "kind": "chapter",
+      "image": 3,
+      "art": "c2_art",
+      "accent": "purple",
+      "number": "02",
+      "titleLines": [
+        [
+          {
+            "t": "ELE ENCONTROU"
+          }
+        ],
+        [
+          {
+            "t": "UMA "
+          },
+          {
+            "t": "FORMA",
+            "hl": true
+          }
+        ]
+      ],
+      "preRoll": 0.35,
+      "postRoll": 0.3,
+      "transitionIn": {
+        "type": "whip",
+        "dur": 0.4
+      },
+      "music": "ritual",
+      "lines": [
+        {
+          "id": "c2_t",
+          "speaker": "narrador",
+          "text": "Ele encontrou uma forma.",
+          "screen": "title",
+          "pause": 0.3,
+          "sfx": [
+            {
+              "name": "boom",
+              "at": "start",
+              "offset": -0.35
+            }
+          ]
+        },
+        {
+          "id": "c2_b1",
+          "speaker": "narrador",
+          "text": "Um ritual.",
+          "screen": "caption",
+          "pause": 0.2
+        },
+        {
+          "id": "c2_b2",
+          "speaker": "narrador",
+          "text": "Magia proibida.",
+          "screen": "caption",
+          "pause": 0.2
+        },
+        {
+          "id": "c2_b3",
+          "speaker": "narrador",
+          "text": "Um deus antigo.",
+          "screen": "caption",
+          "pause": 0.35,
+          "sfx": [
+            {
+              "name": "rumble",
+              "at": "start",
+              "offset": 0.0
+            }
+          ]
+        },
+        {
+          "id": "c2_q",
+          "speaker": "narrador",
+          "text": "Mas existe um preço.",
+          "screen": "quote",
+          "screenText": "Mas existe um preço.",
+          "pause": 0.0,
+          "sfx": [
+            {
+              "name": "braam",
+              "at": "word:preço",
+              "offset": 0.0
+            }
+          ]
+        }
+      ],
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.04,
+          "x": 0.05,
+          "y": 0.9
+        },
+        {
+          "at": "end",
+          "s": 1.12,
+          "x": 0.1,
+          "y": -0.9
+        }
+      ],
+      "particles": [
+        {
+          "kind": "sparks",
+          "count": 30
+        },
+        {
+          "kind": "dust",
+          "count": 16
+        }
+      ],
+      "glow": {
+        "base": 0.3,
+        "amp": 0.18,
+        "period": 40
+      },
+      "flicker": 0.05
+    },
+    {
+      "id": "cap3",
+      "kind": "chapter",
+      "image": 4,
+      "art": "c3_art",
+      "accent": "red",
+      "number": "03",
+      "titleLines": [
+        [
+          {
+            "t": "ELE ACEITOU"
+          }
+        ],
+        [
+          {
+            "t": "O PREÇO",
+            "hl": true
+          }
+        ]
+      ],
+      "preRoll": 0.35,
+      "postRoll": 0.3,
+      "transitionIn": {
+        "type": "drip",
+        "dur": 0.5
+      },
+      "music": "price",
+      "lines": [
+        {
+          "id": "c3_t",
+          "speaker": "narrador",
+          "text": "Ele aceitou o preço.",
+          "screen": "title",
+          "pause": 0.3,
+          "sfx": [
+            {
+              "name": "boom",
+              "at": "start",
+              "offset": -0.35
+            }
+          ]
+        },
+        {
+          "id": "c3_b1",
+          "speaker": "narrador",
+          "text": "Sacrifícios.",
+          "screen": "caption",
+          "pause": 0.2,
+          "sfx": [
+            {
+              "name": "hit",
+              "at": "start",
+              "offset": -0.05
+            }
+          ]
+        },
+        {
+          "id": "c3_b2",
+          "speaker": "narrador",
+          "text": "Vidas inocentes.",
+          "screen": "caption",
+          "pause": 0.2,
+          "sfx": [
+            {
+              "name": "hit",
+              "at": "start",
+              "offset": -0.05
+            }
+          ]
+        },
+        {
+          "id": "c3_b3",
+          "speaker": "narrador",
+          "text": "Cidades destruídas.",
+          "screen": "caption",
+          "pause": 0.45,
+          "sfx": [
+            {
+              "name": "hit",
+              "at": "start",
+              "offset": -0.05
+            }
+          ]
+        },
+        {
+          "id": "c3_q",
+          "speaker": "vilao",
+          "text": "Só mais uma.",
+          "screen": "quote",
+          "screenText": "“Só mais uma.”",
+          "pause": 0.0
+        }
+      ],
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.04,
+          "x": 0,
+          "y": 0.2
+        },
+        {
+          "at": "end",
+          "s": 1.24,
+          "x": 0.05,
+          "y": -0.3
+        }
+      ],
+      "particles": [
+        {
+          "kind": "embers",
+          "count": 50
+        },
+        {
+          "kind": "ash",
+          "count": 26
+        }
+      ],
+      "flicker": 0.1,
+      "style": {
+        "shakeCaptions": 3
+      }
+    },
+    {
+      "id": "cap4",
+      "kind": "chapter",
+      "image": 5,
+      "art": "c4_art",
+      "accent": "blue",
+      "number": "04",
+      "titleLines": [
+        [
+          {
+            "t": "OS HERÓIS TENTAM"
+          }
+        ],
+        [
+          {
+            "t": "IMPEDI-LO",
+            "hl": true
+          }
+        ]
+      ],
+      "preRoll": 0.45,
+      "postRoll": 0.35,
+      "transitionIn": {
+        "type": "slash",
+        "dur": 0.35
+      },
+      "music": "heroes",
+      "lines": [
+        {
+          "id": "c4_b2",
+          "speaker": "heroina",
+          "text": "Você está matando pessoas para trazer uma morta de volta!",
+          "screen": "caption",
+          "screenText": "“Você está matando pessoas para trazer uma morta de volta!”",
+          "pause": 0.35,
+          "sfx": [
+            {
+              "name": "sword",
+              "at": "start",
+              "offset": -0.45
+            }
+          ]
+        },
+        {
+          "id": "c4_q",
+          "speaker": "vilao",
+          "text": "Você não faria o mesmo... por quem ama?",
+          "screen": "quote",
+          "screenText": "“Você não faria o mesmo por quem ama?”",
+          "pause": 0.0
+        }
+      ],
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.25,
+          "x": -0.9,
+          "y": 0
+        },
+        {
+          "at": "@quote-8f",
+          "s": 1.3,
+          "x": -0.6,
+          "y": 0
+        },
+        {
+          "at": "@quote+26f",
+          "s": 1.45,
+          "x": 1.0,
+          "y": -0.2
+        },
+        {
+          "at": "end",
+          "s": 1.5,
+          "x": 1.0,
+          "y": -0.25
+        }
+      ],
+      "particles": [
+        {
+          "kind": "dust",
+          "count": 24
+        },
+        {
+          "kind": "sparks",
+          "count": 12,
+          "color": "150,200,255"
+        }
+      ]
+    },
+    {
+      "id": "cap5",
+      "kind": "panorama",
+      "image": 6,
+      "art": "c5_pan",
+      "accent": "purple",
+      "number": "05",
+      "titleLines": [
+        [
+          {
+            "t": "A VERDADEIRA"
+          }
+        ],
+        [
+          {
+            "t": "TRAGÉDIA",
+            "hl": true
+          }
+        ]
+      ],
+      "preRoll": 0.35,
+      "postRoll": 0.4,
+      "transitionIn": {
+        "type": "fog",
+        "dur": 0.5
+      },
+      "music": "tragedy",
+      "lines": [
+        {
+          "id": "c5_b1",
+          "speaker": "narrador",
+          "text": "Ele não pede poder.",
+          "screen": "caption",
+          "pause": 0.2
+        },
+        {
+          "id": "c5_b3",
+          "speaker": "narrador",
+          "text": "Não quer vingança.",
+          "screen": "caption",
+          "pause": 0.35
+        },
+        {
+          "id": "c5_q1",
+          "speaker": "narrador",
+          "text": "Ele só quer...",
+          "screen": "quoteLead",
+          "screenText": "Ele só quer:",
+          "pause": 0.35
+        },
+        {
+          "id": "c5_q2",
+          "speaker": "narrador",
+          "text": "ela de volta.",
+          "screen": "quote",
+          "screenText": "ELA DE VOLTA.",
+          "pause": 0.0,
+          "sfx": [
+            {
+              "name": "swell",
+              "at": "start",
+              "offset": 0.0
+            }
+          ]
+        }
+      ],
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.0,
+          "x": -0.97,
+          "y": 0
+        },
+        {
+          "at": "@quote-30f",
+          "s": 1.02,
+          "x": -0.8,
+          "y": 0
+        },
+        {
+          "at": "@quote+6f",
+          "s": 1.05,
+          "x": 0.06,
+          "y": -0.1
+        },
+        {
+          "at": "end",
+          "s": 1.07,
+          "x": 0.1,
+          "y": -0.1
+        }
+      ],
+      "particles": [
+        {
+          "kind": "ash",
+          "count": 22
+        },
+        {
+          "kind": "sparks",
+          "count": 22
+        }
+      ],
+      "glow": {
+        "base": 0.12,
+        "amp": 0.08,
+        "period": 60
+      },
+      "style": {
+        "quoteUppercase": true
+      },
+      "beats": [
+        {
+          "at": "@quote",
+          "flash": {
+            "color": "190,150,255",
+            "dur": 30,
+            "peak": 0.35,
+            "cy": "35%"
+          }
+        }
+      ]
+    },
+    {
+      "id": "moral",
+      "kind": "moral",
+      "image": 7,
+      "accent": "purple",
+      "preRoll": 0.4,
+      "postRoll": 1.6,
+      "transitionIn": {
+        "type": "zoomBlur",
+        "dur": 0.5
+      },
+      "music": "moral",
+      "lines": [
+        {
+          "id": "sm1",
+          "speaker": "narrador",
+          "text": "O vilão mais perigoso é aquele que ama alguém mais do que ama o mundo.",
+          "screen": "line2",
+          "screenText": "O VILÃO MAIS PERIGOSO É AQUELE QUE AMA ALGUÉM MAIS DO QUE AMA O MUNDO.",
+          "pause": 0.0,
+          "sfx": [
+            {
+              "name": "bell",
+              "at": "end",
+              "offset": 0.05
+            }
+          ],
+          "hlFrom": "AMA"
+        }
+      ],
+      "art": "mo_villain",
+      "camera": [
+        {
+          "at": "start",
+          "s": 1.04,
+          "x": 0.2,
+          "y": 0
+        },
+        {
+          "at": "end",
+          "s": 1.16,
+          "x": 0.35,
+          "y": -0.1
+        }
+      ],
+      "depth": 10,
+      "glow": {
+        "base": 0.2,
+        "amp": 0.1,
+        "period": 70
+      },
+      "particles": [
+        {
+          "kind": "petals",
+          "count": 16
+        },
+        {
+          "kind": "sparks",
+          "count": 14
+        }
+      ],
+      "fog": {
+        "opacity": 0.12
+      },
+      "emblem": {
+        "art": "mo_sigil",
+        "left": 40,
+        "top": 120,
+        "width": 210,
+        "at": "start+4f"
+      }
+    }
+  ]
+}

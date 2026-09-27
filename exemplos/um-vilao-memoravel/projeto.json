@@ -1,0 +1,44 @@
+{
+  "title": "Um Vilão Memorável: o que faria tudo por ela",
+  "slug": "um-vilao-memoravel",
+  "images": [
+    "1.jpeg",
+    "2.jpeg",
+    "3.jpeg",
+    "4.jpeg",
+    "5.jpeg",
+    "6.jpeg",
+    "7.jpeg"
+  ],
+  "voices": {
+    "narrador": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-8%",
+      "pitch": "-3Hz",
+      "fx": "narrador",
+      "label": "Narrador"
+    },
+    "vilao": {
+      "voice": "pt-BR-AntonioNeural",
+      "rate": "-16%",
+      "pitch": "-10Hz",
+      "fx": "sombrio",
+      "label": "Vilão"
+    },
+    "heroina": {
+      "voice": "pt-BR-FranciscaNeural",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "fx": "sala",
+      "label": "Heroína",
+      "italic": true
+    }
+  },
+  "music": {
+    "theme": "padrao",
+    "key": "D",
+    "ambience": "wind",
+    "drone": true,
+    "seed": 2026
+  }
+}

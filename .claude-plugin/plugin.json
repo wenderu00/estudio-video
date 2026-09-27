@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "estudio-video",
+  "version": "0.1.0",
+  "description": "Estúdio de vídeo para YouTube com dois modos: transforma uma sequência de imagens em vídeo 16:9 e Shorts 9:16 (roteiro, narração neural pt-BR, trilha original composta por código, motion design com Remotion), ou edita uma gravação bruta com fala em vídeo cortado (transcrição local, cortes pela transcrição, legendas queimadas, overlays e b-roll, mixagem −14 LUFS).",
+  "author": {
+    "name": "Marcio Wendell",
+    "email": "marcio.wendell.contact@gmail.com"
+  },
+  "keywords": [
+    "video",
+    "youtube",
+    "shorts",
+    "remotion",
+    "narracao",
+    "tts",
+    "trilha-sonora",
+    "motion-design",
+    "edicao",
+    "transcricao",
+    "legendas",
+    "ffmpeg"
+  ]
+}
